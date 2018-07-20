@@ -1,0 +1,156 @@
+<android.support.constraint.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/top_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/left_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/middle_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/right_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <TextView
+        android:id="@+id/firestore_action_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Action: "
+        app:layout_constraintEnd_toStartOf="@+id/middle_margin"
+        app:layout_constraintStart_toStartOf="@+id/left_margin"
+        app:layout_constraintTop_toBottomOf="@+id/firestore_status_title" />
+
+    <TextView
+        android:id="@+id/firestore_action"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:maxLines="1"
+        app:layout_constraintEnd_toStartOf="@+id/right_margin"
+        app:layout_constraintStart_toStartOf="@+id/middle_margin"
+        app:layout_constraintTop_toBottomOf="@+id/firestore_status" />
+
+    <TextView
+        android:id="@+id/firestore_status_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Status: "
+        app:layout_constraintEnd_toStartOf="@+id/middle_margin"
+        app:layout_constraintStart_toStartOf="@+id/left_margin"
+        app:layout_constraintTop_toBottomOf="@+id/firestore_id_title" />
+
+    <TextView
+        android:id="@+id/firestore_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:maxLines="1"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/right_margin"
+        app:layout_constraintStart_toStartOf="@+id/middle_margin"
+        app:layout_constraintTop_toBottomOf="@+id/firestore_id" />
+
+    <TextView
+        android:id="@+id/firestore_name_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Name: "
+        app:layout_constraintEnd_toStartOf="@+id/middle_margin"
+        app:layout_constraintStart_toStartOf="@+id/left_margin"
+        app:layout_constraintTop_toTopOf="@+id/top_margin" />
+
+    <TextView
+        android:id="@+id/firestore_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="@+id/firestore_id"
+        app:layout_constraintStart_toStartOf="@+id/firestore_id"
+        app:layout_constraintTop_toTopOf="@+id/firestore_name_title" />
+
+
+    <TextView
+        android:id="@+id/firestore_policy_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Policy: "
+        app:layout_constraintEnd_toStartOf="@+id/middle_margin"
+        app:layout_constraintStart_toStartOf="@+id/left_margin"
+        app:layout_constraintTop_toBottomOf="@+id/firestore_action_title" />
+
+    <TextView
+        android:id="@+id/firestore_policy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:maxLines="1"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/right_margin"
+        app:layout_constraintStart_toStartOf="@+id/middle_margin"
+        app:layout_constraintTop_toBottomOf="@+id/firestore_action" />
+
+    <TextView
+        android:id="@+id/firestore_id_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="ID: "
+        app:layout_constraintEnd_toStartOf="@+id/middle_margin"
+        app:layout_constraintStart_toStartOf="@+id/left_margin"
+        app:layout_constraintTop_toBottomOf="@+id/firestore_name_title" />
+
+    <TextView
+        android:id="@+id/firestore_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:autoSizeTextType="uniform"
+        android:maxLines="1"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/right_margin"
+        app:layout_constraintStart_toStartOf="@+id/middle_margin"
+        app:layout_constraintTop_toBottomOf="@+id/firestore_name" />
+
+    <Button
+        android:id="@+id/firestore_refresh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Refresh"
+        app:layout_constraintEnd_toStartOf="@+id/right_margin"
+        app:layout_constraintStart_toStartOf="@+id/left_margin"
+        app:layout_constraintTop_toBottomOf="@+id/firestore_policy_title" />
+
+</android.support.constraint.ConstraintLayout>

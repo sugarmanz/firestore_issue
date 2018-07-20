@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "249543409238",
+    "firebase_url": "https://firestore-issue.firebaseio.com",
+    "project_id": "firestore-issue",
+    "storage_bucket": "firestore-issue.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249543409238:android:9b0791e6b5a84426",
+        "android_client_info": {
+          "package_name": "io.clockwyse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "249543409238-ndk86a9q4p1ts813vkili994g7qbnn6i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAedA5JMcBHNeBAHpUpcYaYv0S75j_TYxE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
