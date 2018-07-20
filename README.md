@@ -3,10 +3,10 @@ Issue: After the Android device deconnects and reconnects a couple times, Firest
 
 The app follows a simple MVP pattern, using the snapshot listener to update the UI.
 
-Prereqs: Get access to my firebase project
-Steps to reproduce:
+
+### Steps to reproduce
 1. Build and open app
-2. Open Firestore data editor (https://console.firebase.google.com/u/0/project/firestore-issue/database/firestore/data~2Fdemo~2Fdemo)
+2. Open Firestore data editor (https://console.firebase.google.com/u/0/project/firestore-issue/database/firestore/data~2Fdemo~2Fdemo) _Email me for access_
 3. Verify correct functionality of listener by modifying `name` field in the editor (should update on the device UI)
 4. Turn on airplane mode on the device
 5. Modify the `name` field twice
